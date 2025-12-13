@@ -93,25 +93,25 @@ if __name__ == "__main__":
     for _ in range(num_courses):
         input_course_info()
 
-while True:
-    print("\n===========================================================")
-    print("USTH STUDENT MARK MANAGEMENT SYSTEM v1.0_Release by SPTQB_2006")
-    print("1. List Students")
-    print("2. List Courses")
-    print("3. Input Marks for a Course")
-    print("4. Show Marks for a Course")
-    print("5. Exit")
-    choice = input("Enter your choice: ")
+    while True:
+        print("\n===========================================================")
+        print("USTH STUDENT MARK MANAGEMENT SYSTEM v1.0_Release by SPTQB_2006")
+        print("1. List Students")
+        print("2. List Courses")
+        print("3. Input Marks for a Course")
+        print("4. Show Marks for a Course")
+        print("5. Exit")
+        choice = input("Enter your choice: ")
 
-    if choice == '1':
-        list_student()
-    elif choice == '2':
+        if choice == '1':
+            list_student()
+        elif choice == '2':
             list_courses()
-    elif choice == '3':
+        elif choice == '3':
             input_marks()
-    elif choice == '4':
+        elif choice == '4':
             show_student_marks()
-    elif choice == '5':
-        break
-    else:
-        print("Invalid choice!")
+        elif choice == '5':
+            break
+        else:
+            print("Invalid choice!")
