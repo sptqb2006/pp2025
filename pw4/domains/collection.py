@@ -25,3 +25,10 @@ class EntityCollection:
             entity = entity_class()
             entity.input()
             self.add(entity)
+
+    def input_multiple_gui(self, entity_class, count):
+        """Input multiple entities via GUI"""
+        for _ in range(count):
+            entity = entity_class()
+            if entity.input_gui():
+                self.add(entity)
